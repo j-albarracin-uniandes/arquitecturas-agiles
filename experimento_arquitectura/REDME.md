@@ -7,9 +7,11 @@
 5. Iniciar Celery en el compomente plataforma_mensajeria (celery -A tareas worker -l info)
 6. Crear un request en postman usando la interfaz del gateway:
 http://127.0.0.1:5000/crear_regla
-y el body:
 
+y el body:
+```
 {
-    "nombre":"regla 2",
-    "descripcion":"regla_2"
+    "nombre":"regla 1",
+    "descripcion":"regla_1"
 }
+```
