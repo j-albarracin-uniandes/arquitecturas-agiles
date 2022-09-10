@@ -39,7 +39,7 @@
 - Iniciar Celery en el compomente plataforma_mensajeria 
     ```cd plataforma_mensajeria/
     celery -A tareas worker -l info
-6. Crear un request en postman usando la interfaz del gateway:
+- Crear un request en postman usando la interfaz del gateway:
     http://127.0.0.1:5000/crear_regla
     y el body:
     ```
@@ -48,3 +48,11 @@
         "descripcion":"regla_1"
     }
     O importar el proyecto en postman https://www.getpostman.com/collections/2a29ce6a6799a39012a2
+
+
+# Inconvenientes
+
+Si su sistema operativo es windows es probable que pueda presentar un error al intentar iniciar Celery para esto ejecute el siguiente comando para poder iniciarlo normalmente
+
+
+    celery -A tareas  worker --pool=solo -l info
