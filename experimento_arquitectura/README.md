@@ -18,10 +18,10 @@
 - Para ver el listado de librerias
     ```
     pip list
-- Sino funciona debe instalar 
+- Sino funciona debe instalar (Cambiar python3 por pyp si usa windows)
     ```
     python3 -m pip install --upgrade pip
-- Para instalar las librerias ejecutar - Instalar librerias requeridas (ver archivo requirement.txt)
+- Para instalar las librerias ejecutar - Instalar librerias requeridas (ver archivo requirement.txt)  (Cambiar python3 por pyp si usa windows)
     ```
     python3 -m pip install -r requirements.txt
 - Ejecutar el componente api_gateway en el puerto 5000
