@@ -15,7 +15,7 @@ app_contex.push()
 api = Api(app)
 
 @celery_app.task(name='crear_regla')
-def crear_regla(nombre_regla, descripcion_regla):
+def crear_regla(nombre_regla, descripcion_regla, retry):
     pass
 
 class VistaAdministrarReglas(Resource):
@@ -23,7 +23,8 @@ class VistaAdministrarReglas(Resource):
     def post(self):
         nombre_regla = request.json['nombre']
         descripcion_regla = request.json['descripcion']
-        args = (nombre_regla, descripcion_regla)
+        retry = 0
+        args = (nombre_regla, descripcion_regla, retry)
         crear_regla.apply_async(args)
         return {'mensaje':'Creacion de regla recibida'}, 200
 
