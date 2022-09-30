@@ -32,5 +32,16 @@ class ConsultarUsuarios(Resource):
         else:           
             return content.json(), 500
 
+class AutenticarUsuarios(Resource):    
+    def post(self):
+      
+        content = requests.post('http://127.0.0.1:5003/auth', json=request.json)
+          
+        if content.status_code == 200:
+            return content.json(), 200            
+        else:           
+            return content.json(), 500
+
 api.add_resource(VistaAdministrarUsuarios, '/editar_usuario')
 api.add_resource(ConsultarUsuarios, '/usuario-by-id')
+api.add_resource(AutenticarUsuarios, '/auth')

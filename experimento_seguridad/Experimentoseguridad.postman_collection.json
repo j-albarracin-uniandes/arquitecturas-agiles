@@ -38,6 +38,37 @@
 			"response": []
 		},
 		{
+			"name": "APIGATEWAY_AUTENTICAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usuario\":\"jhon\",\n    \"contrasena\":\"jhon-1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5003/auth",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5003",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "APIGATEWAY_CONSULTAR",
 			"request": {
 				"method": "POST",
