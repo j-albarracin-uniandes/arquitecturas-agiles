@@ -15,11 +15,22 @@ class VistaAdministrarUsuarios(Resource):
 
     def post(self):
       
-        content = requests.post('http://127.0.0.1:5000/usuario', json=request.json)
-        print(content.json())      
+        content = requests.post('http://127.0.0.1:5001/usuario', json=request.json)
+           
+        if content.status_code == 200:
+            return content.json(), 200            
+        else:           
+            return content.json(), 500
+
+class ConsultarUsuarios(Resource):    
+    def post(self):
+      
+        content = requests.post('http://127.0.0.1:5002/usuario-by-id', json=request.json)
+          
         if content.status_code == 200:
             return content.json(), 200            
         else:           
             return content.json(), 500
 
 api.add_resource(VistaAdministrarUsuarios, '/editar_usuario')
+api.add_resource(ConsultarUsuarios, '/usuario-by-id')
