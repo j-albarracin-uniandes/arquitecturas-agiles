@@ -7,37 +7,6 @@
 	},
 	"item": [
 		{
-			"name": "APIGATEWAY_ADMINISTRAR",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\":1,\n    \"nombre\":\"J\",\n    \"apellido\":\"A\",\n    \"correo_electsronico\":\"j@gmail.com\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://127.0.0.1:5000/editar_usuario",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "5000",
-					"path": [
-						"editar_usuario"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "APIGATEWAY_AUTENTICAR",
 			"request": {
 				"method": "POST",
@@ -69,10 +38,54 @@
 			"response": []
 		},
 		{
+			"name": "APIGATEWAY_ADMINISTRAR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDU3NDU1OSwianRpIjoiODc2ZjE2NGQtMmM0Yy00YzczLWJiMTUtOWI3ODY5MDQxNmRjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NTc0NTU5LCJleHAiOjE2NjQ1NzU0NTl9.WzlO60SjkF8hYTHulI5nBYoF02qKkHv1dC94fCNc2I8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"nombre\":\"Jhon\",\n    \"apellido\":\"A\",\n    \"correo_electronico\":\"j@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/editar_usuario",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"editar_usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "APIGATEWAY_CONSULTAR",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDU3NDkwOCwianRpIjoiYjYzZjEyNTgtM2ExYS00MjkxLThhMGQtNTNiZWYzMGI3MWViIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NTc0OTA4LCJleHAiOjE2NjQ1NzU4MDh9.G8hQaTGNUn8dIEVnlw_VrPLaEUpip6386ECy_hQSBbI",
+						"type": "text",
+						"disabled": true
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"id\":1\n}",
@@ -100,7 +113,7 @@
 			"response": []
 		},
 		{
-			"name": "MICRO_CONSULTAR_USUARIO",
+			"name": "MICRO_ADMINISTRAR_USUARIO",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -131,7 +144,7 @@
 			"response": []
 		},
 		{
-			"name": "MICRO_ADMINISTRAR_USUARIO",
+			"name": "MICRO_CONSULTAR_USUARIO",
 			"request": {
 				"method": "POST",
 				"header": [],
