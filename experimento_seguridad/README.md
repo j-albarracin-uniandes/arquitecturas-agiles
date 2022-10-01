@@ -6,7 +6,7 @@
 - Haber instalado requests
 -- pip install requests
 
-# Instrucciones de ejecución
+## Instrucciones de ejecución
 
 * Ubicarse en la carpeta  (Esto por cada terminal que abra debe ejecutar)
 
@@ -40,6 +40,6 @@
     O importar el proyecto en postman https://www.getpostman.com/collections/687146f3c3f9730da15e
 
 
-# Inconvenientes
+## Inconvenientes
 
 No se presento algo que presentara problemas para ejecutar el proyecto si se siguen las indicaciones dadas.
