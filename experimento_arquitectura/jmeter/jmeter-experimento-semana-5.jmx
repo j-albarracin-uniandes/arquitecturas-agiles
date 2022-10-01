@@ -30,7 +30,7 @@
           <collectionProp name="Arguments.arguments">
             <elementProp name="filesDirectory" elementType="Argument">
               <stringProp name="Argument.name">filesDirectory</stringProp>
-              <stringProp name="Argument.value">/Users/franzjr/Develop/MISO/architecture/arquitecturas-agiles/experimento_arquitectura/jmeter</stringProp>
+              <stringProp name="Argument.value">/Users/franzjr/Develop/MISO/architecture/arquitecturas-agiles/experimento_arquitectura/jmeter/prueba-20220914</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
