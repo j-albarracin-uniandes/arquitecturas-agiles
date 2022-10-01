@@ -27,7 +27,7 @@ class ConsultarUsuarios(Resource):
     @jwt_required()
     def post(self):
       
-        content = requests.post('http://127.0.0.1:5002/usuario-by-id', json=request.json)
+        content = requests.post('http://127.0.0.1:5002/usuario-by-id', json=request.json, headers=request.headers)
           
         if content.status_code == 200:
             return content.json(), 200            
