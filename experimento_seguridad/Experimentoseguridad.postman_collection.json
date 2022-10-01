@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "80cbff05-6c3c-473c-b908-427f89bd0c26",
+		"_postman_id": "4df8c74a-71ed-476f-8d5b-fd5feef13876",
 		"name": "Experimentoseguridad",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10155962"
 	},
 	"item": [
 		{
@@ -43,13 +44,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDU3NDU1OSwianRpIjoiODc2ZjE2NGQtMmM0Yy00YzczLWJiMTUtOWI3ODY5MDQxNmRjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NTc0NTU5LCJleHAiOjE2NjQ1NzU0NTl9.WzlO60SjkF8hYTHulI5nBYoF02qKkHv1dC94fCNc2I8",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYzMzEwNSwianRpIjoiYWY3MGZmZmUtMzg1My00ZWFhLWJkODUtY2MwMmY3MjEzMmUzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NjMzMTA1LCJleHAiOjE2NjQ2MzQwMDV9.wNIHVz9-wu1Ir1WRam0c8bWmceXlSp63ED9LB7R4F08",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\":1,\n    \"nombre\":\"Jhon\",\n    \"apellido\":\"A\",\n    \"correo_electronico\":\"j@gmail.com\"\n}",
+					"raw": "{\n    \"id\":1,\n    \"nombre\":\"Jhon\",\n    \"apellido\":\"ABC 123 ABC\",\n    \"correo_electronico\":\"j@gmail.com\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -80,9 +81,8 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDU3NDkwOCwianRpIjoiYjYzZjEyNTgtM2ExYS00MjkxLThhMGQtNTNiZWYzMGI3MWViIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NTc0OTA4LCJleHAiOjE2NjQ1NzU4MDh9.G8hQaTGNUn8dIEVnlw_VrPLaEUpip6386ECy_hQSBbI",
-						"type": "text",
-						"disabled": true
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYzMzEwNSwianRpIjoiYWY3MGZmZmUtMzg1My00ZWFhLWJkODUtY2MwMmY3MjEzMmUzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NjMzMTA1LCJleHAiOjE2NjQ2MzQwMDV9.wNIHVz9-wu1Ir1WRam0c8bWmceXlSp63ED9LB7R4F08",
+						"type": "text"
 					}
 				],
 				"body": {
@@ -115,7 +115,14 @@
 			"name": "MICRO_ADMINISTRAR_USUARIO",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYzMzEwNSwianRpIjoiYWY3MGZmZmUtMzg1My00ZWFhLWJkODUtY2MwMmY3MjEzMmUzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NjMzMTA1LCJleHAiOjE2NjQ2MzQwMDV9.wNIHVz9-wu1Ir1WRam0c8bWmceXlSp63ED9LB7R4F08",
+						"description": "a",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"id\":1,\n    \"nombre\":\"Jhon\",\n    \"apellido\":\"A\",\n    \"correo_electronico\":\"j@gmail.com\"\n}",
@@ -146,7 +153,13 @@
 			"name": "MICRO_CONSULTAR_USUARIO",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2NDYzMTQ2MiwianRpIjoiNjA2MWI3YTEtZjc2NC00MDU5LWExMDctZjc1OWVhYmRmM2FjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY0NjMxNDYyLCJleHAiOjE2NjQ2MzIzNjJ9.xxwT3ED7RdZZgec-l2cj27VUJiNGpZQVJpJk1EferXg",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"id\":1\n}",
