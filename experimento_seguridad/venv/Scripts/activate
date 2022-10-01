@@ -37,11 +37,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/franzjr/Develop/MISO/architecture/arquitecturas-agiles/experimento_seguridad/venv"
+VIRTUAL_ENV="C:\Angular Projects\Experimento_Arquitectura\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
-PATH="$VIRTUAL_ENV/bin:$PATH"
+PATH="$VIRTUAL_ENV/Scripts:$PATH"
 export PATH
 
 # unset PYTHONHOME if set
