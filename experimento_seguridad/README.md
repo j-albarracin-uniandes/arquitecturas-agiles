@@ -37,7 +37,7 @@
 
 - Crear un request en postman usando la interfaz del gateway:
     Importar la colección de postman  Experimentoseguridad.postman_collection.json que esta en la raiz de esta carpeta
-    O importar el proyecto en postman https://www.getpostman.com/collections/687146f3c3f9730da15e
+    O importar el proyecto en postman https://www.getpostman.com/collections/8690aeea30a6aae158eb
 
 
 ## Inconvenientes
